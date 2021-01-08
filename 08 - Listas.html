@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>08 - Listas</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Anderson"/>
+	<meta name="keywords" content="Listas, ordem, desordem"/>
+	<meta name="description" content="criação de listas no HTML"/>
+	<link rel="stylesheet" type="text/css" href="CSS/08.css"/>
+</head>
+<body>
+	<h1>Criação de listas</h1>
+		<h2>Sumário</h2>
+		<ol id="sumario">
+			<li><a href="#intro">Introdução</a></li>
+			<li><a href="#list_ord">Listas Ordenadas</a></li>
+			<li><a href="#list_nord">Listas Não Ordenadas</a></li>
+		</ol>
+		<h2 id="intro">Introdução</h2>
+			<p>É muito comum sites utilizarem listas para especificar alguma coisa, por exemplo, listar os melhores times do ano na ordem do melhor para o pior
+				, listar aréas de estudos, listar pesoas que compraram em super mercado, enfim listas é algo muito importante e muito utilizado em sites e por
+				isso é importante você saber faze-lo.
+			</p>
+			<p>Existe dois tipos de listas mais usadas no HTML, a <span class="destaque">ORDENADA</span> e a <span class="destaque">NÃO ORDENADA</span>, cada um com uma semântica especifica</p>
+		<h2 id="list_ord">Lista Ordenada</h2>
+			<p>
+				As listas ordenas são as listas que usam numeros , normalmente usadas em rankings, em que um item teve mais destaque que o outro em base em algum critério.
+			</p>
+			<p>Por exemplo: os 5 melhores jogos do super nintendo:</p>
+			<ol type="1">
+				<li>Zelda the link to the past</li>
+				<li>Super Mario World</li>
+				<li>Bomberman 3</li>
+				<li>Mortal Kombat 3</li>
+				<li>Top Gear</li>
+			</ol>
+			<p>
+				Para fazer uma lista ordenada você irá usar a tag OL, pensa que o O é de ordenada e o L é de lista se ler OL invertido fica lista ordenada, e para fazer os itens você irá usar a tag LI, pensa que L é de lista e o I de item se ler LI invertido fica item da lista.
+			</p>
+			<h3>Tipos de marcadores da lista ordenada</h2>
+				<p>Nessa lista existe 3 tipos de marcadores de ordem pelos seus valores, ela é referenciada atráves do parametro TYPE e pode possuir os seguintes valores: A, I e 1. Cada um usa marcadores diferentes</p>
+				<h4>Tipo A</h4>
+					<p>Esse marcador indica que a ordem vai ser alfabetica, ou seja, o primeiro item vai estar marcado com o A, o segundo vai estar marcado com o B e assim por diante</p>
+					<ol type="A">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+						<li>quarto item</li>
+						<li>quinto item</li>
+					</ol>
+				<h4>Tipo I</h4>
+					<p>Esse marcador utiliza os numeros romanos para poder marcar os itens, ou seja, o primeiro vai estar marcado com o I, o segundo vai estar marcado com o II e assim por diante</p>
+					<ol type="I">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+						<li>quarto item</li>
+						<li>quinto item</li>
+					</ol>
+				<h4>Tipo 1</h4>
+					<p>Esse marcador indica a ordem númerica que as pessoas utilizam no dia a dia, ou seja, o primeiro item vai estar marcado com o 1, o sengo item com o marcador 2 e assim por diante</p>
+					<ol type="1">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+						<li>quarto item</li>
+						<li>quinto item</li>
+					</ol>	
+			<h3>Start</h3>
+				<p>O START é outro parametro da lista ordenada nela você consegue indicar com qual numero, numero romano ou letra que ira começar a lista, mas só pode colocar valores numericos para indica a posição que deseja começar. </p>
+				<p>Se for numerico e o start tiver o valor 4 então a lista começara no 4, se for romano a lista começara no IV, se for alfabético começara no D</p>	
+					<ol type="1" start="4">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+					</ol>	
+					<ol type="I" start="4">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+					</ol>
+					<ol type="A" start="4">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+					</ol>
+		<h2 id="list_nord">Lista Não ordenada</h2>
+			<p>As listas não ordenadas são listas que eu quero apenas citar os itens, em que nenhum tem o peso maior que o outro como na lista ordenada, é como se todos fosem iguais, por isso os marcadores não indicam uma ordem</p>
+			<p>Por exemplo: O que tem em  o gabinete do PC</p>
+			<ul>
+				<li>CPU</li>
+				<li>Memória RAM</li>
+				<li>Memória ROM</li>
+				<li>HD</li>
+				<li>Barramento</li>
+			</ul>
+			<p>Para fazer uma lista NÃO ORDENADA você ira utilizar a tag UL, e dentro dela a tag LI para fazer os itens da listas igual na lista ordenada</p>
+			<h3>Tipos de marcadores</h3>
+				<p>Os marcadores dessa lista são simbolos para não indicar preferencia ou peso de um item ele possui 3 tipos de marcadores, sendo referenciada com a tag TYPE e com os valores: Circle, Square e Disc</p>
+				<h4>Tipo Cicle</h4>
+					<p>Esse marcador indica um circulo com o fundo não preencido, ou seja somente a borda</p>
+					<ul type="circle">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+						<li>quarto item</li>
+						<li>quinto item</li>
+					</ul>	
+				<h4>Tipo Square</h4>
+					<p>Esse marcador é um quadrado todo preencido</p>
+					<ul type="square">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+						<li>quarto item</li>
+						<li>quinto item</li>
+					</ul>
+				<h4>Tipo Disc</h4>
+					<p>Esse marcador indica um circulo todo preenchido</p>
+					<ul type="disc">
+						<li>primeiro item</li>
+						<li>segundo item</li>
+						<li>terceiro item</li>
+						<li>quarto item</li>
+						<li>quinto item</li>
+					</ul>
+				<p>Observação, nas listas não ordenas não existe o parametro start já que todos os itens são marcados com o mesmo marcador </p>
+	</body>
+</html>

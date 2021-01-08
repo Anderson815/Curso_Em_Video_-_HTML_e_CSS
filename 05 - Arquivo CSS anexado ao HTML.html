@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>05 - Arquivo CSS anexado ao arquivo HTML</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Anderson Correia de Souza"/>
+	<meta name="keywords" content="Formatação, imagens, CSS, Editar"/>
+	<meta name="description" content="Nessa página iremos falar de formatação de imagens"/>
+	<link rel="stylesheet" type="text/css" href="CSS/05.css">
+</head>
+
+<body>
+	<h1>Arquivo CSS anexado ao arquivo HTML</h1>
+		<p class="p1">
+			Uma coisa interessante é que podemos fazer um arquivo CSS que contém todos as configurações da página de forma separada
+			do HTML, isto é, um CSS que não é local, mas sim global em que se eu colocar o endereço desse arquivo automaticamente a 
+			minhas página irá recebera aquelas configuração que foi feita naquele arquivo. 
+		</p>
+		<p class="p2">
+			De forma rezumida, podemos escrever em um arquivo CSS um <span style="font-weight: 900; font-family: Calibri; font-size: 16; color: rgb(255,0,0)">único estilo CSS que pode ser usado para todas as páginas que eu quiser</span>.
+		</p>
+		<p>
+			Para fazer isso você terá que colocar dentro da Tag Head uma Tag Link e colocar três valores para três atributos: REL, TYPE e HREF:
+		</p>
+		<ul>
+			<li>REL</li>
+				<p>REL é um atributo que indica o tipo de RELação tem um documento externo, que será utilizado pelo parametro HREF, que está vinculado com o documento atual. No caso do CSS terá um relacionamento stylesheet (folha de estilo), ou seja, dara a aparência desejada. 
+				</p>
+			<li>TYPE</li>
+				<p>
+				Ele indica qual é o TIPO do documento que está sendo vinculado com o documento atual. Esse parametro pode possuir os valores do tipo MIME:
+				text/html, text/css e assim por diante. 
+				</p>
+			<li>HREF</li>
+				<p>
+				Ele indica aonde que está o documento que será vinculado ao documento atual, pensa em href como REFerência. 
+				</p>
+		</ul>
+		<p>Irá fical algo do tipo <&<span style="color: rgb(255,0,0)">link</span> <span style="color: #00ff00">rel</span>=<span style="color: rgb(250,236,69)">"stylesheet"</span> <span style="color: #00ff00">type</span>=<span style="color: rgb(250,236,69)">"text/css"</span> <span style="color: #00ff00">href</span>=<span style="color: rgb(250,236,69)">"CSS/04.css"</span>/></p>
+</body>
+</html>

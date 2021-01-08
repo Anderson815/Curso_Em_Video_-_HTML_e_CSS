@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+*
+{
+	background-color: rgb(75, 75, 75);
+	color: rgb(125, 125, 125);
+}
+h1
+{
+	text-align: center;
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: 900px;
+}
+
+h2
+{
+	text-align: center;
+	font-family: Arial;
+	font-size: 26px;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+h3
+{
+	font-family: Arial;
+	font-size: 22px;
+	font-style: italic;
+	text-align: center;
+}
+
+p
+{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 18px;
+	text-indent: 75px;
+	margin: 0px 20px;
+}
+
+li
+{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+span.destaque
+{
+	text-decoration: underline;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+p.Tag_P_da_Div
+{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 900;	
+	text-indent: 0px;
+	background-color: transparent;
+	color: rgb(10, 10, 10);
+}
+
+p.Tag_P_da_Div_desc_CSS
+{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 0;	
+	text-indent: 0px;
+	background-color: transparent;
+	color: rgb(10, 10, 10);
+	margin: 10px 0px;
+}
+
+
+
+
+div.div1
+{
+	width: 500px;
+	height: 200px;
+	background-color: rgb(125, 0, 0);
+	border: 6px solid black;
+}
+
+div.div1_margin
+{
+	width: 500px;
+	height: 200px;
+	background-color: rgb(125, 0, 0);
+	border: 6px solid black;
+	margin: 10px;	
+}
+
+div.div2_margin
+{
+	width: 500px;
+	height: 200px;
+	background-color: rgba(175, 100, 0, .7);
+	border: 6px solid black;
+	margin: 5px 10px 10px 10px;
+}
+
+div.div2
+{
+	width: 500px;
+	height: 200px;
+	background-color: rgba(175, 100, 0, .7);
+	border: 6px solid black;
+}
+
+div.div_maior
+{
+	width: 512px;
+	height: 424px;
+	border: 10px solid rgb(0, 50, 150);
+	margin: 20px 0px;
+}
+
+div#div_maior_margin
+{
+	width: 532px;
+	height: 444px;
+	border: 10px solid rgb(0, 50, 150);
+}
+
+div#div_maior_margin_2
+{
+	width: 532px;
+	height: 444px;
+	border: 10px solid rgb(0, 50, 150);
+}
+
+div.div_maior_margin_3
+{
+	width: 532px;
+	height: 454px;
+	border: 10px solid rgb(0, 50, 150);
+}
+
+div.amarelo
+{
+	background-color: rgb(200, 180, 0);
+	width: 800px;
+	height: 800px;
+	border: 3px solid black;
+	margin: 50px 0px;
+	/*
+	position: relative;
+	top: 0px;
+	left: 0px; 
+	*/
+}
+
+div.vermelho
+{
+	background-color: rgb(125, 0, 0);
+	width: 400px;
+	height: 400px;
+	border: 3px solid black;
+	
+	/*
+	border-right: 0px solid white;
+	border-top: 0px solid white;
+	*/
+
+	/*
+	position: absolute;
+	top: 0px;
+	right: 0px;	
+	*/
+}
+
+div.laranja
+{
+	background-color: rgba(175, 100, 0, .7);
+	width: 200px;
+	height: 200px;
+	border: 3px solid black;
+	
+	/*
+	border-right: 0px solid white;
+	border-top: 0px solid white;
+	*/
+
+	/*
+	position: absolute;
+	top: 0px;
+	right: 0px;	
+	*/
+}
+
+
+div#a1
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+div#v1
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;	
+}
+
+div#l1
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;	
+}
+
+div#a2
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+div#v2
+{
+	position: absolute;
+	bottom: 50px;
+	right: 100px;	
+}
+
+div#l2
+{
+	position: absolute;
+	top: 50px;
+	right: 20px;	
+}
+
+div#a3
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+div#v3
+{
+	position: absolute;
+	bottom: 10px;
+	left: 20px;	
+}
+
+div#l3
+{
+	position: relative;
+	top: 10px;
+	left: 50px;	
+}
+
+div#l4
+{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;	
+}

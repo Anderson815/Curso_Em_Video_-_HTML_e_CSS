@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>04 - Formatação de Imagens</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Anderson Correia de Souza"/>
+		<meta name="description" content="Formatação de imagens usando CSS"/>
+		<meta name="keywords" content="CSS, Imagens, Formatação"/>
+		<link rel="stylesheet" type="text/css" href="CSS/04.css"/>
+	</head>
+
+	<body>
+		<h1>Formatação de Imagens usando CSS</h1>
+			<h2>Introdução</h2>
+				<p>
+					Olá na aula de imagens aprendemos a colocar imagens no seu site usando a tag IMG e falamos um pouco de cada parametro dessa tag: SRC, ALT e TITLE. Mas muitas vezes não basta só colocar a imagen no seu site, as vezes você quer colocar uma borda ou uma sombra dar algum tipo de espaçamento ou alguma outra coisa com a imagens. 
+				</p>
+				<p>
+					Por isso que nessa aula iremos falar como você poderá fazer isso usando o CSS, falando do seus principais parametros e dos principais valores para colocar nesses parametros (sim alguns valores de parametros já são montados, assim como o font-size do CSS, que já contem os tipos de letra a serem usadas)
+				</p>
+				<p>
+					Antes de começarmos a falar de qualquer parametro, você ira colocar o nome da tag de imagem (IMG) abrir e feixar chaves, assim como todas as outras tags, assim poderemos colocar os parabetros e seus valores no CSS
+				</p>
+			<h2>Tamanho</h2>
+				<p>
+					Muitas vezes você quer ajustar o tamanho, ou deixando mais largo ou mais alto ou, até mesmo, os dois. Para isso temos dois parametro o <span class="destaque">height</span> e o <span class="destaque">width</span> que são de altura e de largura respectivamente.
+				</p>
+				<p>
+					Você pode colocar valores para a largura e a altura em pixels, ou seja um valor exato, ou em porcentagem, mas nesse caso o valor não é exato e será resposivo, isto é, depende do tamanho da janela, ele sempre vai tentar ajustar para o tamanho da janela.
+				</p>
+				<div class="tamanho_px">
+					<p>width: 500px;</p>
+					<p>height: 200px;</p>	
+					<p>Isso quer dizer que: </p>
+					<p>Largura: 500 pixels</p>
+					<p>Altura: 200 pixels</p>	
+				</div>
+				<br/>
+				<div class="tamanho_porc">
+					<p>width: 60%;</p>
+					<p>height: 15%;</p>
+					<p>Isso quer dizer que: </p>
+					<p>Largura: 60 porcento</p>
+					<p>Altura: 15 porcento</p>
+				</div>
+				<br/>
+				<p>No primeiro retangulo os valores de largura e altura são exatos, então se o usuário diminuir a tela o retângulo continuara com suas dimensões, ou seja, <span class="destaque">sem sofrer alterações</span>.
+				</p>
+				<p>
+					Já no segundo retângulo o valor está em porcentâgem, por estar assim, o retângulo sempre ira se ajustar para o tamanho da tela, então se por acaso diminuir a tela do navegador o segundo retângulo também irá dimunir, ou seja, <span class="destaque">sofre alterações.</span> 
+				</p>
+				<p>
+					Faça o teste, tente diminuir a janela de navegação e veja o que acontece com o dois retângulos
+				</p>
+			<h2>Bordas</h2>		
+				<h3>Largura, Estilo e Cor</h3>	
+					<p>
+						Para fazer bordas e deixa-lá da maneira adeguada existe vários parametros, que auxiliam na largura da borda, na cor e entre outras caracteristicas que você quer deixar na borda da sua imagem, vamos dar uma olhada nos principais parametro: 
+					</p>
+					<ul type="square">
+						<li>BORDER-WIDTH</li>
+							<p>
+								O border-width que define a largura da borda. No CSS você usaria esse parâmetro assim: border-width:(aqui você coloca o tamanho em pixels assim como as letras); 
+							</p>
+						<li>BORDER-STYLE</li>
+							<p>
+								O border-style vai definir o estilo da borda, se vai ser uma linha reta, se vai ser duas linha retas envolta da imagem entre outros estilos que você vai ver mais para frente nessa página. No CSS você usaria esse parâmetro assim: border-style:(aqui você escolhera o estilo que já está pré-montado, isto é, que você pode escolher, assim como a familia de letras, os demais estilos você irá ver mais para frente);
+							</p>
+						<li>BORDER-COLOR</li>
+							<p>
+								O border-color serve para você escolher a cor da borda, você pode escolher a cor tanto pelo seu formato hexadecimal, RGB, RGBA, ou pelo nome da cor em inglês. No CSS você usaria esse parâmetro assim: border-color: (Nome, Hexadecimal, RGB ou RGBA);
+							</p>
+					</ul>
+					<p>
+						Veja alguns exemplos desses parametros:
+					</p>
+
+					<div class="exemplo_1">
+						<figure class="exemplo_1_1">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									img<br/>
+									{<br/>
+									border-width: 3px;<br/>
+									border-style: solid;<br/>
+									border-color: rgb(0,0,255);<br/>
+									}
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="exemplo_1_2">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									img<br/>
+									{<br/>
+									border-width: 10px;<br/>
+									border-style: inset;<br/>
+									border-color: #00FF00;<br/>
+									}
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="exemplo_1_3">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									img<br/>
+									{<br/>
+									border-width: 8px;<br/>
+									border-style: double;<br/>
+									border-color: red;<br/>
+									}
+								</p>
+							</figcaption>
+						</figure>
+					</div>
+
+					<p class="absoluto">
+						Você pode simplesmente fazer essas três configurações, largura (parametro <span class="destaque">border-width</span>), estilo (parametro <span class="destaque">border-style</span>) e a cor (parametro <span class="destaque">border-color</span>), simplesmente, atráves do parametro <span style="font-weight: 900; font-size: 20px;">BORDER</span> dai você coloca entre os os valores da largura, do estilo e da cor respectivamente separados por espaço. Veja:
+					 </p>
+
+					<div class="exemplo_2">
+						<figure class="exemplo_2_1">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									img<br/>
+									{<br/>
+									border: 3px solid rgb(0,0,255);<br/>
+									}
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="exemplo_2_2">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									img<br/>
+									{<br/>
+									border: 10px inset #00FF00;<br/>
+									}
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="exemplo_2_3">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									img<br/>
+									{<br/>
+									border: 8px double red;<br/>
+									}
+								</p>
+							</figcaption>
+						</figure>
+					</div>
+
+						<p>
+							Veja os principais tipos de bordas: 			
+						</p>
+					</div>
+
+					<div class="conjunto_bordas_1">
+						<figure class="borda-1">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									dotted
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="borda-2">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									dashed
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="borda-3">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									solid
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="borda-4">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									double
+								</p>
+							</figcaption>
+						</figure>			
+
+						<figure class="borda-5">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									groove
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="borda-6">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									ridge
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="borda-7">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									inset
+								</p>
+							</figcaption>
+						</figure>
+
+						<figure class="borda-8">
+							<img  src="Imagens/04/zelda2.jpg" alt="link"/>
+							<figcaption>
+								<p>
+									<br/>
+									outset
+								</p>
+							</figcaption>
+						</figure>
+					</div>	
+
+				<h3>Bordas arredondadas</h3>	
+					<p>
+						Nem sempre você vai querer bordas quadradas ou retangulas não é verdade? Por isso o CSS tem um parametro que te permitir fazer bordas arredondadas é o <span class="destaque">border-radius</span>, para isso você digitará o parametro e colocar como valor o raio do circulo das bordas em pixels. Esse raio tem a ver com estremidade da borda. Veja uma ilutração de como usar o parametro border-radius e seu resultado.
+					</p>
+					<div class="borda_circular">
+						<figure class="ilustracao_arredondada">			
+							<img src="Imagens/04/borda_arredondada_e.jpg" alt="ilutração da borda arredondada" title="ilutração da borda arredondada"/>
+							<figcaption>
+								<p>Ilustração da borda arredondada</p>
+							</figcaption>
+						</figure>
+						<figure class="resultado_arredondado">
+							<div class="resultado"></div>
+							<figcaption>
+								<P>Resultado da borda arredondada</P>
+							</figcaption>
+						</figure>
+					</div>
+					<p>
+						Você também consegue regular cada canto da borda arredondada, colocando o valor para cada canto o raio da parte circular usando o mesmo parametro border-radius, mas colocando os quatro valores na seguinte ordem, o primeiro para a parte superior esquerda, a segunda para a parte superior direita, a terceira para a parte inferior direita e a segunda para a parte inferior esquerda, tudo isso no mesmo parametro separado por espaço. Veja:
+					</p>
+					<div class="cada_canto_da_borda">
+						<figure class="arredondado_por_canto">
+							<div class="controle_de_borda"></div>
+							<figcaption class="lista_arredondada">
+								<p style="font-size: 20px; font-weight: 900px">Lista de cada canto da borda e seus devidos raios da imagem a esquerda</p>
+								<p style=" text-decoration: underline;">
+									border-radius: 50px 10px 60px 0px;
+								</p>
+								<ul>
+									<li>Superior esquerda: 50px</li>
+									<li>Superior direita: 10px</li>
+									<li>Inferior direita: 60px</li>
+									<li>Inferior esquerda: 0px</li>
+								</ul>
+							</figcaption>
+						</figure>
+					</div>
+			<h2>Sombra</h2>
+			<p>
+				Além das bordas, podemos colocar sombras também nas imagens usando o parametro <span class="destaque">box-shadow</span>, nele colocamos 4 valores o primeiro é a distância horizontal, se o valor for positivo ficara para a direita, caso o contrário ficara para a esquerda, o segundo é o valor vertical, se o valor for positivo ficara para baixo, caso contrário ficara para cima, o terceiro é o espalhamento da sombra que indica o quanto a sombra será nítida e por ultimo temos a cor da sombra, tudo separado por espaço. Veja a tabela abaixo:
+			</p>
+			<table>
+				<tr>
+					<td>				
+						<figure class="img_sombra_1">
+							<img class="img_sombra_1" src="Imagens/04/mario.jpg" alt="sombra" title="sombra"/>
+							<figcaption>
+								<p>
+									box-shadow: 30px 0px 5px black;
+								</p>
+							</figcaption>	
+						</figure>
+					</td>
+
+					<td>
+						<figure>
+							<img class="img_sombra_2" src="Imagens/04/mario.jpg" alt="sombra" title="sombra"/>
+							<figcaption>
+								<p>
+									box-shadow: -30px 0px 5px black;
+								</p>
+							</figcaption>	
+						</figure>					
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<figure>
+							<img class="img_sombra_3" src="Imagens/04/mario.jpg" alt="sombra" title="sombra"/>
+							<figcaption>
+								<p>
+									box-shadow: 0px 30px 5px black;
+								</p>
+							</figcaption>	
+						</figure>
+					</td>
+
+					<td>
+						<figure>
+							<img class="img_sombra_4" src="Imagens/04/mario.jpg" alt="sombra" title="sombra"/>
+							<figcaption>
+								<p>
+									box-shadow: 0px -30px 5px black;
+								</p>
+							</figcaption>	
+						</figure>						
+					</td>
+				</tr>
+			</table>
+
+		<h2>Observação</h2>
+			<p>
+				Essas formatações de borda e sombra não serve somente para imagens, mas também para diversas outras tags que geram um espécie de "conteiner" como TD (da tag table), table, div e outras como pode ser vista no código fonte dessa página que forma usados essas formatações nesse elementos citados.
+			</p>
+		<h2>Fontes</h2>
+			<ul>
+				<li><a href="https://tableless.com.br/transition-e-animation/" target="_blank">Transição</a></li>
+			</ul>
+	</body>
+</html>

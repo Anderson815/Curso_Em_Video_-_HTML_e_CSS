@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+body
+{
+	background-color: rgb(75, 75, 75);
+	color: rgb(125, 125, 125);
+}
+
+h1
+{
+	color: rgb(20, 20, 20);
+	font-family: Arial;
+	font-size: 25pt;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+p
+{
+	font-family: Arial;
+	font-size: 18pt;
+	color: rgb(200, 200, 200);
+	text-indent: 50px;
+	text-align: justify;
+	margin: 0px 20px;
+}
+
+header{
+	border-bottom: 5px solid rgb(255,100,0);
+	width: 100%;
+	height: 120px;
+	margin-bottom: 15px;
+	position: relative;
+	top: 0px;
+}
+
+header h1{
+	font-family: Arial;
+	font-size: 25pt;
+	text-align: center;
+	width: 650px; 
+}
+
+header h2{
+	font-family: Arial;
+	font-style: italic;
+	font-size: 18pt;
+	text-align: center;
+	width: 400px;
+}
+
+nav#menu_navegacao
+{
+	display: block;
+}
+
+nav#menu_navegacao h1
+{
+	display: none; /*vai tirar a parte visual desse elemento no site, mas será muito util para os motores de busca*/
+}
+
+nav#menu_navegacao ul
+{
+	list-style-type: none;
+	text-transform: uppercase; /*o texto vai se trasformar em um novo texto com tudo maiúsculo*/
+	position: absolute;
+	top: 0px;
+	right: 50px;
+}
+
+nav#menu_navegacao li
+{
+	display: inline-block; /*display é uma propriedade que indica quais caracteristicas o elemento vai ter*/
+	/*se o elemento tiver o valor block no display, então esse elemento, terá algumas caracteristicas de caixa, como height, width, margit-bottom e margim-top, entre outras*/
+	/*se o elemento tiver o valor inline no display, então ele não vai ter todas as caracteristicas de espaçamento do block, e os elementos inline fica um do lado do outro*/
+	/*se o elemento tiver o valor inline-block, então ele vai ter todoas as caracteristicas de dimensão do block e fluxo do line(ficar um do lado outro por exemplo)*/
+	margin: 2px;
+	padding: 10px;
+	background-color: rgb(150, 150, 150);
+	border: 3px solid black;
+	transition: background-color 2s;/*transição: propriedade que indica a propriedade e o tempo de atraso em trasição, por exemplo o uso do hover*/
+}
+
+nav#menu_navegacao li:hover{
+	background-color: rgb(100, 100, 100);
+}
+
+nav#menu_navegacao a:hover{
+	color: rgb(200, 200, 200);
+	text-decoration: underline;
+}
+
+nav#menu_navegacao a
+{
+	color: rgb(25, 25, 25);
+	text-decoration: none;
+	font-weight: 900;
+	transition: color 1s; /*transição: propriedade que indica a propriedade e o tempo de atraso em trasição, por exemplo o uso do hover*/
+}
+
+div#d{
+	width: 500px;
+	height: 300px;
+	border: 8px solid rgb(255, 100, 100);
+	background-color: rgb(0, 150, 250);
+	padding: 0px;
+}
+
+div#d p{
+	display: block;
+	font-family: Arial;
+	font-size: 25pt;
+	text-indent: 0px;
+	margin: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	margin-top: 15px;
+	border-top: 3px solid rgb(230, 230, 230);
+}
+
+footer h1{
+	display: none;
+}
+
+footer h2{
+	text-align: center;
+}
+
+footer li{
+	display: inline;
+}
+
+footer ul{
+	text-align: center;
+}
+
+footer a{
+	color: rgb(0, 150, 250);
+	font-family: Arial;
+	font-size: 14pt;
+	font-style: italic;
+	text-decoration: none;
+	margin: 15px;
+	transition: color 1.2s;
+}
+
+footer a:hover{
+	color: rgb(200, 100, 0);
+}

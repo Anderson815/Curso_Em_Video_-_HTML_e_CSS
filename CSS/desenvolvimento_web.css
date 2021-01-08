@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+p
+{
+	font-family: Arial;
+	size: 18;
+	text-indent: 25px;
+}
+
+h1
+{
+	font-family: Arial;
+	size: 30;
+	font-weight: 900px;
+	text-align: center;
+}
+
+h2
+{
+	font-family: arial;
+	size: 26px;
+	color: rgb(0,0,255);
+	text-align: center;
+}
+
+a
+{
+	color: green;
+}
+
+a:hover
+{
+	color: rgba(255,0,0,1);
+}
+
+img
+{
+	border: 2px solid rgb(0,0,0);
+	border-style: solid;
+	border-width: 20px;
+	border-color: rgb(255,0,0);
+	box-shadow: 10px 10px 5px rgb(0,0,0);
+}

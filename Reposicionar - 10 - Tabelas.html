@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>10 - Tabelas</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Andrson correia de Souza"/>
+	<meta name="keywords" content="tabelas, linhas, colunas, títulos"/>
+	<meta name="description" content="Criação de tabelas"/>
+	<link rel="stylesheet" type="text/css" href="CSS/Tabelas.css">
+</head>
+<body>
+	<table id="exemplo_basico">
+		<tbody> <!-- Corpo da tabela -->
+			<tr> <!-- Linha -->
+				<td>(1 , 1)</td> <!-- Célula -->
+				<td>(1 , 2)</td> <!-- Célula -->
+				<td>(1 , 3)</td> <!-- Célula -->
+			</tr>
+
+			<tr> <!-- Linha -->
+				<td>(2 , 1)</td> <!-- Célula -->
+				<td>(2 , 2)</td> <!-- Célula -->
+				<td>(2 , 3)</td> <!-- Célula -->
+			</tr>
+
+			<tr> <!-- Linha -->
+				<td>(3 , 1)</td> <!-- Célula -->
+				<td>(3 , 2)</td> <!-- Célula -->
+				<td>(3 , 3)</td> <!-- Célula -->
+			</tr>
+		</tbody>
+	</table>
+
+	<table id="calendario">
+		<caption>Setembro de 2020</caption> <!-- Título da tabela inteira-->
+		<thead> <!-- títulos das colunas -->
+			<th id="p_titulo">D</th> <!-- Título da primeira coluna-->
+			<th>S</th> <!-- Título da segunda coluna-->
+			<th>T</th> <!-- Título da terceira coluna-->
+			<th>Q</th> <!-- Título da quarta coluna-->
+			<th>Q</th> <!-- Título da quinta coluna-->
+			<th>S</th> <!-- Título da sexta coluna-->
+			<th id="u_titulo">S</th> <!-- Título da sétima coluna-->
+		</thead>
+		<tbody> <!-- Contéudo da tabela-->
+			<tr>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+			</tr>
+			<tr>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table id="M31">
+		<caption>Galaxy M31</caption>
+		<tbody>
+			<tr>
+				<td class="ce">Marca</td>
+				<td class="cd">Samsung</td>
+			</tr>
+			<tr>
+				<td class="ce">Modelo</td>
+				<td class="cd">M31</td>
+			</tr>
+			<tr>
+				<td class="ce">Preço</td>
+				<td class="cd">R$ 1999,00</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="ce">Processador</td> <!-- rowspan - faz com que está celula ocupe mais de uma linhya, neste caso ira ocupar 2 linhas -->
+				<td class="cd">2.3Ghz</td>
+			</tr>
+			<tr>
+				<td class="cd">Octa-Core</td>
+			</tr>
+			<tr>
+				<td class="ce">RAM</td>
+				<td class="cd">6GB</td>
+			</tr>
+			<tr>
+				<td class="ce">Armazenamento</td>
+				<td class="cd">128GB</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="ce">Bateria</td> <!-- rowpan - faz com que está celula ocupe mais de uma linha, neste caso serão ocupar 2 linhas -->
+				<td class="cd">6000mAh</td>
+			</tr>
+			<tr>
+				<td class="cd">15W</td>
+			</tr>
+			<tr>
+				<td colspan="2" id="cam">Cameras</td> <!-- colspan - faz com que está cellula ocupe mais de uma coluna, neste caso serão ocupados d2 colunas-->
+			</tr>
+			<tr>
+				<td class="ce">Macro</td>
+				<td rowspan="2" class="cd">5MP</td> <!-- rowpan - faz com que está celula ocupe mais de uma linha, neste caso serão ocupar 2 linhas -->
+			</tr>
+			<tr>
+				<td class="ce">Depth</td>
+			</tr>
+			<tr>
+				<td class="ce">Main</td>
+				<td class="cd">64MP</td>
+			</tr>
+			<tr>
+				<td class="ce">Ultra Wide</td>
+				<td class="cd">8MP</td>
+			</tr>
+			<tr>
+				<td class="ce">Frontal</td>
+				<td class="cd">32MP</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,374 @@
+ @charset "utf-8";
+
+h1
+{
+	text-align: center;
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: 900px;
+}
+
+h2
+{
+	text-align: center;
+	font-family: Arial;
+	font-size: 26px;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+h3
+{
+	font-family: Arial;
+	font-size: 22px;
+	font-style: italic;
+	text-align: center;
+}
+
+p
+{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 18px;
+	text-indent: 75px;
+}
+
+span.destaque
+{
+	text-decoration: underline;
+	font-weight: 900px;
+	font-size: 20px;
+}
+
+li
+{
+	font-family: Calibri;
+	font-size: 20px;
+	font-style: italic;
+}
+
+div.exemplo_1
+{
+	position: relative;
+	width: 870px;
+	height: 500px;
+	border: 5px dotted black;
+}
+
+figure.exemplo_1_1
+{
+	position: absolute;
+	width: 215px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgb(0,0,255);
+}
+
+figure.exemplo_1_2
+{
+	position: absolute;
+	top: 0px;
+	left: 280px;
+	width: 215px;
+	border-width: 10px;
+	border-style: inset;
+	border-color: #00FF00;
+}
+
+figure.exemplo_1_3
+{
+	position: absolute;
+	top: 0px;
+	left: 560px;
+	width: 215px;
+	border-width: 8px;
+	border-style: double;
+	border-color: red;
+}
+
+div.conjunto_bordas_1
+{
+	position: relative;
+	height:780px;
+	width: 1150px;
+	border: 5px double black;
+}
+
+figure.borda-1
+{
+	width: 215px;
+	border: 10px dotted red;
+}
+
+figure.borda-1 p
+{
+	text-align: center;
+}
+
+figure.borda-2
+{
+	position: absolute;
+	top: 0px;
+	width: 215px;
+	left: 280px;
+	border: 10px dashed red;
+}
+
+figure.borda-2 p
+{
+	text-align: center;
+}
+
+figure.borda-3
+{
+	position: absolute;
+	top: 0px;
+	width: 215px;
+	left: 560px;
+	border: 10px solid red;
+}
+
+figure.borda-3 p
+{
+	text-align: center;
+}
+
+figure.borda-4
+{
+	position: absolute;
+	top: 0px;
+	width: 215px;
+	left: 840px;
+	border: 10px double red;
+	/*
+		top: 1275px;
+		position: absolute;
+	*/
+}
+
+figure.borda-4 p
+{
+	text-align: center;
+}
+
+figure.borda-5
+{
+	position: absolute;
+	top: 390px;
+	width: 215px;
+	border: 10px groove red;
+}
+
+figure.borda-5 p
+{
+	text-align: center;
+}
+
+figure.borda-6
+{
+	position: absolute;
+	left: 280px;
+	top: 390px;
+	width: 215px;
+	border: 10px ridge red;
+}
+
+figure.borda-6 p
+{
+	text-align: center;
+}
+
+figure.borda-7
+{
+	position: absolute;
+	left: 560px;
+	top: 390px;
+	width: 215px;
+	border: 10px inset red;
+}
+
+figure.borda-7 p
+{
+	text-align: center;
+}
+
+figure.borda-8
+{
+	position: absolute;
+	left: 840px;
+	top: 390px;
+	width: 215px;
+	border: 10px outset red;
+}
+
+figure.borda-8 p
+{
+	text-align: center;
+}
+
+div.exemplo_2
+{
+	position: relative;
+	width: 950px;
+	height: 450px;
+	border: 5px dashed #000000;
+}
+
+figure.exemplo_2_1
+{
+	position: absolute;
+	top: 0px;
+	width: 250px;
+	border: 3px solid rgb(0,0,255);
+}
+
+figure.exemplo_2_2
+{
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	width: 250px;
+	border: 10px inset #00FF00;
+}
+
+figure.exemplo_2_3
+{
+	position: absolute;
+	top: 0px;
+	left: 600px;
+	width: 250px;
+	border: 8px double red;
+}
+
+/* Bordas arredondadas */
+
+div.borda_circular
+{
+	position: relative;
+	height: 360px;
+}
+
+figure.ilustracao_arredondada
+{
+	position: absolute;
+}
+
+figure.resultado_arredondado
+{
+	position: absolute;
+	top: 0px;
+	left: 500px;
+}
+
+div.resultado
+{
+	border: 3px solid blue;
+	border-radius: 25px;
+	width: 400px;
+	height: 300px;
+}
+
+figure.arredondado_por_canto
+{
+	position: relative;
+}
+
+div.controle_de_borda
+{
+	border: 5px solid rgb(0,0,255);
+	border-radius: 50px 10px 60px 0px;
+	width: 400px;
+	height: 300px;
+}
+
+figcaption.lista_arredondada
+{
+	position: absolute;
+	top: 0px;
+	left: 600px;
+}
+
+div.cada_canto_da_borda
+{
+	position: relative;
+	border: 10px solid orange;
+	border-radius: 70px 0px 70px 0px;
+}
+
+img.img_sombra_1
+{
+	padding: 20px;
+	margin: 20px;
+	border: 8px solid rgb(255,100,50);
+	border-radius: 15px;
+	box-shadow: 30px 0px 5px black;
+}
+
+img.img_sombra_2
+{
+	padding: 20px;
+	margin: 20px;
+	border: 8px solid rgb(255,100,50);
+	border-radius: 15px;
+	box-shadow: -30px 0px 5px black;
+}
+
+img.img_sombra_3
+{
+	padding: 20px;
+	margin: 20px;
+	border: 8px solid rgb(255,100,50);
+	border-radius: 15px;
+	box-shadow: 0px 30px 5px black;
+}
+
+img.img_sombra_4
+{
+	padding: 20px;
+	margin: 20px;
+	border: 8px solid rgb(255,100,50);
+	border-radius: 15px;
+	box-shadow: 0px -30px 5px black;
+}
+
+td
+{
+	border: 10px solid red;
+	position: relative;
+}
+
+div.tamanho_px
+{
+	border: 5px double rgb(150,200,150);
+	width: 500px;
+	height: 200px;
+}
+
+div.tamanho_porc
+{
+	border: 5px double rgb(150,200,150);
+	width: 60%;
+	height: 15%;
+}
+
+img.img_transition_1
+{
+	border: 5px groove red;
+}
+
+img.img_transition_1:hover
+{
+	border: 10px solid red;
+	padding: 20px;
+}
+
+div.fixed
+{
+	background-color: white;
+	border: 6px solid rgb(255,50,175);
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width:300px;
+	height:100px;
+}

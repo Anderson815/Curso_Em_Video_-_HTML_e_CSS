@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>09 - Posição e espaçamentos</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Anderson Correia de Souza" />
+		<meta name="keywords" content="posição, position, espaçamento, padding, margin"/>
+		<meta name="description" content="Posicionamento em sites"/>
+		<link rel="stylesheet" type="text/css" href="CSS/09.css"/>
+	</head>
+
+	<body>
+		<h1>Posicionamento e espaçamento</h1>
+			<p>
+				Veremos nessa página como posicionar alguns objetos pelo seu site, para que o layout fique mais aceitável pelo usuário e não deixar telas feias, também iremos ver sobre alguns tipos de espaçamentos entre alguns componentes como o padding e o margin.
+		    </p>
+		    <h2>Espaçamentos</h2>
+			    <p>
+			    	As vezes tu quer dar um espaçamento interno e externo de componentes, seja ele uma div, um figure ou outro tipo de container, como se fosse uma margem da parte de dentro e de fora desse container.
+			    </p>
+			    <p>
+			    	Para isso é utilizado os parametros <span class="destaque">margin</span> e <span class="destaque">padding</span>. Vejamos como funciona cada um:
+			    </p>
+		    	<h3>Introdução do Margin</h3>
+		    		<p>
+		    			A Tag <span class="destaque">Margin</span> é utilizada para criar uma margen externa do componente depois da borda, ou seja, um espaço depois da borda do elemento, isso serve para dar um espaço de um elemnto a outro e não deixa-los tão colados um no outro. O espaço delimitado para o Margin é, exatamente, o espaço utilizado para separa aquele elemento de outro. Veja:
+		    		</p>
+		    		<br/>
+		    		<ul type="circule">
+			    		<li>Sem Margin nas duas Divs</li>
+				    		<div class="div_maior">
+						    	<div class="div1">
+						    		<p class="Tag_P_da_Div">Primeira Div</p>
+						    	</div>
+						    	<div class="div2">
+						    		<p class="Tag_P_da_Div">Segunda div</p>
+						    	</div>
+						    </div>
+						    <p>
+						    	Repare que as duas Divs estão uma colada na outra, tanto é que a borda inferior da primeira Div se uni com a borda superior da segunda Div, cada borda de cada Div tem 5 pixels de largura, então nessa união aparenta ter um borda de 10 pixels, já que não possuem espaços entre os elementos, nesse caso entre as duas Divs. Além de que elas estão coladas com a borda da Div maior (a de borda azul).
+							</p>
+							<p>
+								Portanto não existe espaço ente um elemento a outro, nesse caso são as Divs, mas poderia ser um elemento figure ou qualquer outro que possa ser uma espécie de container.
+							</p>
+					    <li>Com margin na primeira Div</li>
+					    	<div id="div_maior_margin">
+						    	<div class="div1_margin">
+						    		<p class="Tag_P_da_Div">Primeira Div</p>
+						    	</div>
+						    	<div class="div2">
+						    		<p class="Tag_P_da_Div">Segunda div</p>
+						    	</div>
+					   		</div>
+					   		<p>
+					   			Repare que a primeira Div não está colada a nem um elemento, existe um espaço entre ele e a segunda Div e um espaço entre ele e a Div maior, esse espaço que é entre um elemento a outro é o chamado margin (detalhe: eu tive que aumentar o tamanho da Div maior porque senão daria problemas, você vai ver isso mais para frente).
+					   		</p>
+					   		<p>
+					   			Para isso que existe o margin, para dar um espaço de um elemento a outro, isso ajuda na estética do site, já que faz muita diferença visualmente falando, deixa o site mais atraente e bonito quando essa Tag é bem aplicada.
+					   		</p>
+					   	<li>Com margin nas duas Divs</li>
+					   		<div class="div_maior_margin_3">
+					   			<div class="div1_margin">
+						    		<p class="Tag_P_da_Div">Primeira Div</p>
+						    	</div>
+						    	<div class="div2_margin">
+						    		<p class="Tag_P_da_Div">Segunda div</p>
+						    	</div>
+					   		</div>
+					   		<p>
+					   			O Margin da primeira Div tem 10 pixels de largura em todos os lados (cima: top; direita: right; inferior: bottom; esquerda: left, isso serve para todos os lados de qualquer elemento), mas preste atenção no código desse site, de preferência no CSS, e você vai ver que o margin superior da segunda Div tem 5 pixels, mas as duas não se somam criando um espaço maior (10px + 5px = 15px), isso <span class="destaque">porque margin de um elemento com a margin de outro elemento não se somam, a penas, a maior prevalece</span> nesse caso a maior é de 10 pixels, da primeira Div, então o espaço entre eles será de 10 pixels e não de 15 pixels, outro exemplo, se o margin inferior da primeira Div fosse de 10px e o margin superior da segunda Div fosse 20 pixels o espaço entre eles seriam de 20 pixels e não 30 pixels com a soma das duas margins (10px + 20px = 30px).</p>
+					   		<p>
+					   		 	Observação: todos os outros lados do margin da segunda Div possue 10 pixels, por isso da a impressão de que todos os lados do margin tem 10 pixels, mesmo que a superior tenha somente 5 pixels, mas por conta do margin inferior da primeira Div sobressai em relação a da segunda em tão a parte superior também tem um espaço de 10 pixels, mas esses 10 pixels é do outro elemento.
+					   		</p>
+				   	</ul>
+		   	<h2>Posicionamento</h2>
+		   	<h3>Origem do cálculo de posição</h3>
+			<p>
+				Ao trabalhar com posição de um elemento devemos utilizar a propriedade <span class="destaque">POSITION</span> do CSS, essa propriedade permite que você coloque um determinado valor que indicará apartir de qual ponto será feito o cálculo de coordenada de posição, ou seja, uma base para o cálculo. Existem 3 valores principais para essa propriedade: Relative, Absolute e Fixed.
+			</p>
+
+			<ul>
+				<li>
+					<span class="destaque">Relative:</span> 
+					<p>
+						O elemento considera como base para as coordenadas o ponto superior esquerdo <span class="destaque">dele mesmo</span>
+					</p>
+				</li>
+				<li>
+					<span class="destaque">Absolute:</span>
+					<p>
+						O elemento tem como base para as coordenadas o ponto superior esquerdo de outro elemento que seja seu parente, normalmente é o <span class="destaque">elemento pai</span> (a tag que está guardando aquele elemento), por exemplo: a tag IMG(para imagens de conteúdo) tem como elemento pai um FIGURE. Mas esse valor só funciona se o elemento pai tiver em sua propriedade position um valor diferente de static.
+					</p>
+				</li>
+				<li>
+					<span class="destaque">Fixed:</span>
+					<p>
+						O elemento tem como base para as coordenadas o ponto superior esquerdo <span class="destaque">da tela</span> que o usuário está vendo, ou seja, vamos supor que o usuário role tela para baixo, esse elemento irá acompanhar o movimento da tela.
+					</p>
+				</li>
+			</ul>
+			<h3>Coordenada</h3>
+			<p>
+				Uma vez que se tem a base, a origem, para o cálculo, restará apenas informar as coordenadas de fato. É bem simples de utilizar as coordenadas, basta eu usar uma das propriedades de direção e colocar a distância que eu quero que o meu elemento fique em relação extremo dessa direção. Propriedades de direção: na vertival utiliza-se <span class="destaque">top ou bottom</span> e na horizontal utiliza-se <span class="destaque">left ou right</span>.
+			</p>
+
+
+			<h3>Exemplos</h3>
+
+		    <div class="amarelo" id="a1">
+		    	<p class="Tag_P_da_Div">AMARELO</p>
+		    	<p class="Tag_P_da_Div_desc_CSS">
+		    		No CSS:<br>
+		    		div#a1<br>
+		    		{<br>
+	    				position: relative;<br>
+						top: 0px;<br>
+						left: 0px;<br>
+		    		}
+		    	</p>
+		    	<div class="vermelho" id="v1">
+		    		<p class="Tag_P_da_Div">VERMELHO</p>
+		    		<p class="Tag_P_da_Div_desc_CSS">
+			    		No CSS:<br>
+			    		div#v1<br>
+			    		{<br>
+		    				position: absolute;<br>
+							top: 0px;<br>
+							right: 0px;<br>
+						}		
+		    		</p>
+		    		<div class="laranja" id="l1">
+			    			<p class="Tag_P_da_Div">LARANJA</p>
+			    			<p class="Tag_P_da_Div_desc_CSS">
+					    		No CSS:<br>
+					    		div#l1<br>
+					    		{<br>
+				    				position: absolute;<br>
+									top: 0px;<br>
+									right: 0px;<br>
+								}			    				
+			    			</p>
+		    		</div>
+		    	</div>	
+		    </div>
+
+		    <div class="amarelo" id="a2">
+		    	<p class="Tag_P_da_Div">AMARELO</p>
+		    	<p class="Tag_P_da_Div_desc_CSS">
+		    		No CSS:<br>
+		    		div#a2<br>
+		    		{<br>
+	    				position: relative;<br>
+						top: 0px;<br>
+						left: 0px;<br>
+		    		}
+		    	</p>
+		    	<div class="vermelho" id="v2">
+		    		<p class="Tag_P_da_Div">VERMELHO</p>
+		    		<p class="Tag_P_da_Div_desc_CSS">
+			    		No CSS:<br>
+			    		div#v2<br>
+			    		{<br>
+		    				position: absolute;<br>
+							bottom: 50px;<br>
+							right: 100px;<br>
+						}		
+		    		</p>
+		    		<div class="laranja" id="l2">
+			    			<p class="Tag_P_da_Div">LARANJA</p>
+			    			<p class="Tag_P_da_Div_desc_CSS">
+					    		No CSS:<br>
+					    		div#l2<br>
+					    		{<br>
+				    				position: absolute;<br>
+									top: 50px;<br>
+									right: 20px;<br>
+								}			    				
+			    			</p>
+		    		</div>
+		    	</div>	
+		    </div>
+
+		    <div class="amarelo" id="a3">
+		    	<p class="Tag_P_da_Div">AMARELO</p>
+		    	<p class="Tag_P_da_Div_desc_CSS">
+		    		No CSS:<br>
+		    		div#a3<br>
+		    		{<br>
+	    				position: relative;<br>
+						top: 0px;<br>
+						left: 0px;<br>
+		    		}
+		    	</p>
+		    	<div class="vermelho" id="v3">
+		    		<p class="Tag_P_da_Div">VERMELHO</p>
+		    		<p class="Tag_P_da_Div_desc_CSS">
+			    		No CSS:<br>
+			    		div#v3<br>
+			    		{<br>
+		    				position: absolute;<br>
+							bottom: 10px;<br>
+							left: 20px;<br>
+						}		
+		    		</p>
+		    		<div class="laranja" id="l3">
+			    			<p class="Tag_P_da_Div">LARANJA</p>
+			    			<p class="Tag_P_da_Div_desc_CSS">
+					    		No CSS:<br>
+					    		div#l3<br>
+					    		{<br>
+				    				position: relatives;<br>
+									top: 10px;<br>
+									left: 50px;<br>
+								}			    				
+			    			</p>
+		    		</div>
+		    	</div>	
+		    </div>
+
+    		<div class="laranja" id="l4">
+	    			<p class="Tag_P_da_Div">LARANJA</p>
+	    			<p class="Tag_P_da_Div_desc_CSS">
+			    		No CSS:<br>
+			    		div#l4<br>
+			    		{<br>
+		    				position: fixed;<br>
+							bottom: 10px;<br>
+							right: 10px;<br>
+						}			    				
+	    			</p>
+    		</div>		    
+
+			<h2>Fontes</h2>
+			<ol>
+				<li><a href="https://www.youtube.com/watch?v=P4nla2AvmxU" target="_blank">Espaços - Vídeo</a></li>
+				<li><a href="https://www.devmedia.com.br/como-usar-as-propriedades-margin-e-padding-css/24409" target="_blank">Espaços - Site</a></li>	
+				<li><a href="https://tableless.com.br/propriedade-position-do-css/" target="_blank">Posições - Site</a></li>
+			</ol>
+
+	</body>
+</html>

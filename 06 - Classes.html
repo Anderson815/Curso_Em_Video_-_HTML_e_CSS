@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>06 - Classes</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Andereson Correia de Souza"/>
+		<meta name="description" content="Classes no HTML e no CSS para melhorar o estilo, a aparência do seu site" />
+		<meta name="keywords" content="Classe, formatação"/>
+		<link rel="stylesheet" type="text/css" href="CSS/06.css"/>
+	</head>
+
+	<body>
+		<h1>Classes das tag para CSS</h1>
+			<h2>Paragráfo de classe 1</h2>
+				<p class="p1">Toda vez que você faz a formatação, isto é como você quer deixar o conteúdo, você coloca uma tag e a formatação desejada
+				 para ela, porém essa formatação vai servir para todo contéudo que utilizam aqueles tipos de Tag, então exemplificando esta
+				 situação, vamos supor que você fez dois paragráfos e quer formatar eles de forma diferentes, mas a forma que você faz lá no
+				 CSS é p{font-family: Arial, font-size:14 e etc}, porém essa formatação <span style="font-family: Arial; font-size: 16;
+				 font-weight: 900; color: rgb(0,0,255)">vai servir para todo o contéudo que usar a tag P, mesmo que você queira formatalos de formas diferentes.</span>
+				</p>
+			
+			<h2>Paragráfo de classd 2</h2>
+				<p class="p2">Para resolver essa situação você pode, no HTML dentro da tag desejada, criar uma classe para aquela tag, no exemplo citado
+				são dois paragráfos que serão formatados de forma diferente, então no HTML você pode fazer assim <'p' class="p1">.....<'/p'> e 
+				no outro paragráfo algo como <'p' class="p2">.....<'/p'>. No CSS para poder configurar de forma diferente você irá fazer assim
+				tag.classe_da_tag, exemplo p.p1(tag paragráfo e classe p1), assim <span style="font-size: 20; font-family: Bookman; color: #00ff00">somente a tag P que possuir a classe p1 terá aquela formatação</span>
+				</p>
+			
+			<h2>No código</h2>
+				<figure>
+					<figcaption>
+						<p>Código do Html:</p>
+					</figcaption>
+					<img src="Imagens/05/cod_html.png" alt="Código HTML" title="Código HTML"/>
+				</figure>
+				<p>Repare que no HTML eu só criei as tags, as classes e joguei o conteúdo, mas não formatei eles ainda, por isso preciso do código CSS
+				para poder fazer essa formatação, mas para isso era necessário criar as classes no HTML
+				</p>
+				<figure>
+					<figcaption>
+						<p>Código do CSS: </p>
+					</figcaption>
+					<img src="Imagens/05/cod_css.png" alt="Código do CSS" title="Código do CSS"/>
+				</figure>
+				<p>Já no CSS eu utilizo as classes que foram criadas no HTML para poder fazer as configurações de cada paragráfo</p>
+	</body>
+</html>

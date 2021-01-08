@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>03 - Imagens</title>
+	<link rel="stylesheet" type="text/css" href="CSS/03.css"/>
+</head>
+<body>
+	<h1>Imagens</h1>
+	<p>Nessa Aula, após termos falado de <span style="font-family: Calibri; color: rgba(28,227,277,0.8); font-weight: 900">titúlos, páragrafos e formatação </span> destes, hoje iremos falar 
+	um pouco das imagens em sites, como é colocado nos sites e tudo mais.</p>
+	<img src="imagens/03/glass_oculos_menor_png.png" alt="Google Glass" title="Imagem">
+	<p>Repare no código dessa imagem no HTML: </p>
+	<img src="imagens/03/Código_da_imagem.png" alt="Código da imagem" title="Código da imagem">
+	<h2>Tag IMG</h2>
+	<p> A Tag <span style="font-size: 18; font-weight: 900; color: red">IMG</span> ela representa que será utilizada imagem, pense que img vem de imagem,
+		dentro dela podemos colocar alguns atributos, vamos falar de 3 especifícos, <span style="font-weight: 900">SRC, ALT e TITLE</span>
+	 </p>
+	 <ul>
+	 	<li>SRC</li>
+	 		<p>Esse atributo é responsável por indicar aonde está a imagem, qual é a origem, o lugar onde se localiza, isso é colocado no valor de SRC. O ideal é que tudo do seu site esteja na pasta principal ou em subpastas da pasta principal.
+	 		</p>
+	 		<p>
+	 			Se ele estiver na mesma pasta basta escrever o nome do arquivo com o formato (alguns exemplos seria o .jpg ou .png)e pronto, caso esteja em uma subpasta da pasta principal escreva o nome da pasta/arquivo.formato ou seja indique o caminho a partir da pasta principal, caso precise subir um nível isto é sair de uma pasta, ou voltar a pasta anterior use dois pontos ../arquivo.formato, assim você ira voltar uma pasta da qual está a página que está sendo usada
+	 		</p>
+
+	 		<li>ALT</li>
+	 			<p>
+	 				Pensa em ALT como um atributo ALTernativo, no valor dele vôcê ira escrever um texto para que <span style="font-weight:900; font-size:16">caso a imagem não seja carregada</span>, seja por que o valor do SRC esteja errado ou porque o arquivo é muito grande e ainda está carregando, ira aparecer esse texto como uma alternativa para a ausência da imagem
+	 			</p>
+	 		<li>TITLE</li>
+	 			<p>
+	 				Esse atributo mostro o título da imagem, isto é, quando o usuário passar o mouse por cima da imagem irá aparecer uma janelinha mostrando o título e isso não serve só para imagens, mas também para outros tipos de midia
+	 			</p>
+	 </ul>
+	 <h2>Tag FIGURE</h2>
+	 <p>
+	 	Essa tag representa conteúdo independente, frequentemente com uma legenda(<"FIGCAPTION">), e é normalmente referido como uma única unidade. Enquanto ela está relacionada com o fluxo principal, sua posição é independente do fluxo principal. Normalmente, isso é uma imagem, uma ilustração, um diagrama, um trecho de código ou um esquema que é referenciado no texto principal, mas que pode ser movido para outra página ou para um apêndice, sem afetar o fluxo principal
+	 </p>
+	 <p>Cuidado com a tentação de aplicar em todas suas imagens a tag figure, pois isso não é correto. Para utilizar melhor esse elemento você deve pensar em <span style="font-weight:900; font-size:16; color: red">como a imagem é utilizada na sua página</span>. Se a imagem faz parte do conteúdo da página e for movida para outro local sem perder seu significado, é sinal que ela pode ficar dentro do novo elemento <span style="color: rgb(255,0,0)">figure</span>. Caso a imagem seja um íncone de navegação, um logotipo, imagens que <span style="font-weight: bolder">devem estar num local específico</span> não devem estar marcadas com o elemento <span style="color: red">figure</span>.
+	 </p>
+	 <h2>Tag FIGCAPTION</h2>
+	 <p>
+	 	Útilizado para marcar legendas para conteúdos inseridos com uso do elemento FIGURE. Sempre deve vir entre um elemento FIGURE, ou seja, deve constar como elemento-filho do elemento FIGURE.
+	 </p>
+</body>
+</html>
