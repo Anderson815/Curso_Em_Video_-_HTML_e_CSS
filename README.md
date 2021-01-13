@@ -17,3 +17,5 @@ Durante o curso, até aonde eu parei, foi utilizado o editor **Sublime Text 3** 
 * Criar divisões (HTML: div)
 * Formatar divisões (CSS? border, margin, padding, box-shadow, border-radius)
 * Tabelas (HTML: table, thead, th, tbody, tr, td)
+
+Veja os códigos das páginas para ver com mais detalhes o que eu aprendi até esse ponto do curso
