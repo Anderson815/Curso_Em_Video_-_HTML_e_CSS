@@ -1,4 +1,4 @@
-# Curso Em VÍdeo - HTML e CSS
+# Curso Em VÍdeo: HTML e CSS
 
 :warning: Não está completo :warning:
 
