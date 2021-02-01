@@ -2,7 +2,7 @@
 
 :warning: Não está completo :warning:
 
-São Exercícios desenvolvidos durante o curso de **HTML5 e CSS3(versão antiga)** da plataforma **Curso em Vídeo**.
+São Exercícios desenvolvidos durante o curso de **HTML5 e CSS3(versão antiga)** da plataforma <a href="https://www.cursoemvideo.com/cursos/">**Curso em Vídeo**</a>.
 
 Durante o curso, até aonde eu parei, foi utilizado o editor **Sublime Text 3** e foi ensinado:
 * Textos (HTML: h1 até o h6, p)
